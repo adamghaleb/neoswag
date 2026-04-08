@@ -7,7 +7,10 @@
   // ---- random hard-glitch bursts on the title ----
   const burst = () => {
     title.classList.add("glitch");
-    setTimeout(() => title.classList.remove("glitch"), 120 + Math.random() * 180);
+    setTimeout(
+      () => title.classList.remove("glitch"),
+      120 + Math.random() * 180,
+    );
   };
   const loop = () => {
     burst();
@@ -38,9 +41,10 @@
     for (let y = 0; y < rows; y++) {
       let line = "";
       for (let x = 0; x < cols; x++) {
-        line += Math.random() < 0.18
-          ? chars[(Math.random() * chars.length) | 0]
-          : " ";
+        line +=
+          Math.random() < 0.18
+            ? chars[(Math.random() * chars.length) | 0]
+            : " ";
       }
       out += line + "\n";
     }
@@ -50,9 +54,15 @@
   setInterval(render, 240);
 
   // ---- keep it one viewport: swallow scroll/zoom gestures ----
-  window.addEventListener("wheel", (e) => e.preventDefault(), { passive: false });
-  window.addEventListener("touchmove", (e) => {
-    if (e.scale && e.scale !== 1) return;
-    e.preventDefault();
-  }, { passive: false });
+  window.addEventListener("wheel", (e) => e.preventDefault(), {
+    passive: false,
+  });
+  window.addEventListener(
+    "touchmove",
+    (e) => {
+      if (e.scale && e.scale !== 1) return;
+      e.preventDefault();
+    },
+    { passive: false },
+  );
 })();

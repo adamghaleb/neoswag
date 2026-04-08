@@ -25,17 +25,20 @@ Think: corrupted archive footage, recovered data, a signal bleeding through from
 ## Layout (Top to Bottom, Mobile)
 
 ### 1. Entry State
+
 - Page loads to black/near-black
 - A subtle static/grain texture covers everything (CSS noise or canvas grain)
 - After a beat (~1-2 seconds), content starts fading/glitching in
 
 ### 2. The Word
+
 - **"NEOSWAG"** — large, bold, centered
 - Should feel like it's being transmitted, not just displayed
 - Glitch effect on the text — occasional flicker, horizontal displacement, RGB split
 - Font: something heavy and wide. Try **Monument Extended**, **Tusker Grotesk**, or **Bebas Neue** as a fallback. Load from Google Fonts or self-host.
 
 ### 3. The Line
+
 - Below the title, one line of text fades in after a delay:
 - **"MONEY IS TEMPORARY. SWAG IS ETERNAL."**
 - Smaller, tracked out, uppercase
@@ -43,6 +46,7 @@ Think: corrupted archive footage, recovered data, a signal bleeding through from
 - Could pulse very slowly (opacity or text-shadow)
 
 ### 4. The Signal
+
 - Some kind of ambient animation in the background or midground
 - Ideas (pick one or combine):
   - Slow-moving gradient mesh (magenta → cyan → yellow, the NeoSwag palette)
@@ -52,6 +56,7 @@ Think: corrupted archive footage, recovered data, a signal bleeding through from
 - Should feel alive but not distracting — atmospheric, not a screensaver
 
 ### 5. The Date (Optional / Cryptic)
+
 - Don't say "Coming Summer 2026"
 - Instead something like:
   - `2026.XX.XX` (redacted)
@@ -61,6 +66,7 @@ Think: corrupted archive footage, recovered data, a signal bleeding through from
 - Small, monospace font, near the bottom
 
 ### 6. Footer / Contact
+
 - Tiny, bottom of page
 - Just: `@adamfadi333` (linked to Instagram)
 - Maybe a small envelope icon or email link
