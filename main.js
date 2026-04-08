@@ -34,8 +34,17 @@
 
   // ---- ascii drift background ----
   const chars = "░▒▓█▌▐▄▀■□◆◇◈◉○●◐◑◒◓╳╱╲┃━┏┓┗┛╋≡≠≈∆∇∎∞※⟁⟁⌁⌬";
-  const cols = 42;
-  const rows = 48;
+  let cols = 42;
+  let rows = 48;
+  const sizeDrift = () => {
+    const cs = getComputedStyle(drift);
+    const fs = parseFloat(cs.fontSize) || 12;
+    // monospace char width ≈ 0.6em, line-height 1.15
+    cols = Math.ceil(window.innerWidth / (fs * 0.6)) + 2;
+    rows = Math.ceil(window.innerHeight / (fs * 1.15)) + 2;
+  };
+  sizeDrift();
+  window.addEventListener("resize", sizeDrift);
   const render = () => {
     let out = "";
     for (let y = 0; y < rows; y++) {
