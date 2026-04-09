@@ -289,60 +289,60 @@ body {
 .title .char {
   display: inline-block;
   color: var(--fg);
-  animation: charWave 4.2s step-end infinite;
+  animation: charWave 6.3s step-end infinite;
 }
-/* N leads the wave, each subsequent letter lags by one step (0.3s) */
+/* N leads, each subsequent letter lags one step (0.1s) behind */
 .title .char:nth-child(1) {
-  animation-delay: -4.2s;
+  animation-delay: -6.3s;
 }
 .title .char:nth-child(2) {
-  animation-delay: -3.9s;
+  animation-delay: -6.2s;
 }
 .title .char:nth-child(3) {
-  animation-delay: -3.6s;
+  animation-delay: -6.1s;
 }
 .title .char:nth-child(4) {
-  animation-delay: -3.3s;
+  animation-delay: -6s;
 }
 .title .char:nth-child(5) {
-  animation-delay: -3s;
+  animation-delay: -5.9s;
 }
 .title .char:nth-child(6) {
-  animation-delay: -2.7s;
+  animation-delay: -5.8s;
 }
 .title .char:nth-child(7) {
-  animation-delay: -2.4s;
+  animation-delay: -5.7s;
 }
 @keyframes charWave {
   0% {
     color: var(--pink);
     text-shadow: 0 0 10px var(--pink);
   }
-  7.143% {
+  1.587% {
     color: var(--orange);
     text-shadow: 0 0 10px var(--orange);
   }
-  14.286% {
+  3.175% {
     color: var(--yel);
     text-shadow: 0 0 10px var(--yel);
   }
-  21.429% {
+  4.762% {
     color: var(--green);
     text-shadow: 0 0 10px var(--green);
   }
-  28.572% {
+  6.349% {
     color: var(--cyan);
     text-shadow: 0 0 10px var(--cyan);
   }
-  35.715% {
+  7.937% {
     color: var(--purple);
     text-shadow: 0 0 10px var(--purple);
   }
-  42.858% {
+  9.524% {
     color: var(--mag);
     text-shadow: 0 0 10px var(--mag);
   }
-  50%,
+  11.111%,
   100% {
     color: var(--fg);
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.18);
