@@ -289,47 +289,63 @@ body {
 .title .char {
   display: inline-block;
   color: var(--fg);
-  --glow: var(--pink);
-  animation: charFlash 9s linear infinite;
+  animation: charWave 4.2s step-end infinite;
 }
+/* N leads the wave, each subsequent letter lags by one step (0.3s) */
 .title .char:nth-child(1) {
-  --glow: var(--pink);
-  animation-delay: 0s;
+  animation-delay: -4.2s;
 }
 .title .char:nth-child(2) {
-  --glow: var(--orange);
-  animation-delay: -1.286s;
+  animation-delay: -3.9s;
 }
 .title .char:nth-child(3) {
-  --glow: var(--yel);
-  animation-delay: -2.571s;
+  animation-delay: -3.6s;
 }
 .title .char:nth-child(4) {
-  --glow: var(--green);
-  animation-delay: -3.857s;
+  animation-delay: -3.3s;
 }
 .title .char:nth-child(5) {
-  --glow: var(--cyan);
-  animation-delay: -5.143s;
+  animation-delay: -3s;
 }
 .title .char:nth-child(6) {
-  --glow: var(--purple);
-  animation-delay: -6.429s;
+  animation-delay: -2.7s;
 }
 .title .char:nth-child(7) {
-  --glow: var(--mag);
-  animation-delay: -7.714s;
+  animation-delay: -2.4s;
 }
-@keyframes charFlash {
-  0%,
-  86%,
+@keyframes charWave {
+  0% {
+    color: var(--pink);
+    text-shadow: 0 0 10px var(--pink);
+  }
+  7.143% {
+    color: var(--orange);
+    text-shadow: 0 0 10px var(--orange);
+  }
+  14.286% {
+    color: var(--yel);
+    text-shadow: 0 0 10px var(--yel);
+  }
+  21.429% {
+    color: var(--green);
+    text-shadow: 0 0 10px var(--green);
+  }
+  28.572% {
+    color: var(--cyan);
+    text-shadow: 0 0 10px var(--cyan);
+  }
+  35.715% {
+    color: var(--purple);
+    text-shadow: 0 0 10px var(--purple);
+  }
+  42.858% {
+    color: var(--mag);
+    text-shadow: 0 0 10px var(--mag);
+  }
+  50%,
   100% {
     color: var(--fg);
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.18);
-  }
-  93% {
-    color: var(--glow);
-    text-shadow: 0 0 10px var(--glow);
   }
 }
 .title__layer--r,
