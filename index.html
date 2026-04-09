@@ -8,68 +8,114 @@
     />
     <meta name="theme-color" content="#0a0a0f" />
     <title>NEOSWAG // TRANSMISSION PENDING</title>
-    <meta name="description" content="MONEY IS TEMPORARY. SWAG IS ETERNAL." />
+    <meta name="description" content="money is temporary. swag is eternal." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="noise" aria-hidden="true"></div>
-    <div class="mesh" aria-hidden="true"></div>
-    <div class="scanline" aria-hidden="true"></div>
-    <div class="ascii-drift" aria-hidden="true"></div>
-    <div class="flash" aria-hidden="true"></div>
+    <main class="panorama">
+      <header class="hdr">
+        <div class="hdr__kicker">transmission // 2026</div>
+        <h1 class="hdr__title" aria-label="NEOSWAG">
+          <span>neo</span><span class="hdr__slash">/</span><span>swag</span>
+        </h1>
+        <p class="hdr__sub">
+          <span>money is temporary.</span>
+          <span>swag is eternal.</span>
+        </p>
+      </header>
 
-    <main class="stage">
-      <h1 class="title" aria-label="NEOSWAG">
-        <span class="title__layer title__layer--base">
-          <span class="char">N</span><span class="char">E</span
-          ><span class="char">O</span><span class="char">S</span
-          ><span class="char">W</span><span class="char">A</span
-          ><span class="char">G</span>
-        </span>
-        <span class="title__layer title__layer--r" aria-hidden="true"
-          >NEOSWAG</span
+      <section class="grid" aria-label="live tiles">
+        <!-- ROW 1 -->
+        <a
+          class="tile tile--wide tile--pink"
+          href="https://instagram.com/n3oswag"
+          target="_blank"
+          rel="noopener"
         >
-        <span class="title__layer title__layer--g" aria-hidden="true"
-          >NEOSWAG</span
+          <div class="tile__flip">
+            <div class="tile__face tile__face--front">
+              <span class="tile__eyebrow">follow</span>
+              <span class="tile__big">@n3oswag</span>
+              <span class="tile__meta">instagram ↗</span>
+            </div>
+            <div class="tile__face tile__face--back">
+              <span class="tile__eyebrow">new drop</span>
+              <span class="tile__big">incoming</span>
+              <span class="tile__meta">stay tuned</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="tile tile--cyan">
+          <span class="tile__eyebrow">signal</span>
+          <span class="tile__num">41<em>%</em></span>
+          <div class="tile__bar"><i style="--p: 41%"></i></div>
+        </div>
+
+        <div class="tile tile--purple">
+          <span class="tile__eyebrow">date</span>
+          <span class="tile__big">2026<em>.</em>··<em>.</em>··</span>
+          <span class="tile__meta">redacted</span>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="tile tile--yellow tile--dark">
+          <span class="tile__eyebrow">status</span>
+          <span class="tile__big">pending</span>
+          <span class="tile__dot"></span>
+        </div>
+
+        <div class="tile tile--green tile--dark">
+          <div class="tile__flip">
+            <div class="tile__face tile__face--front">
+              <span class="tile__eyebrow">now playing</span>
+              <span class="tile__glyph">♪</span>
+              <span class="tile__meta">——————</span>
+            </div>
+            <div class="tile__face tile__face--back">
+              <span class="tile__eyebrow">loading</span>
+              <span class="tile__glyph">▶</span>
+              <span class="tile__meta">soon</span>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="tile tile--wide tile--orange tile--dark"
+          href="mailto:hi@neoswag.net"
         >
-        <span class="title__layer title__layer--b" aria-hidden="true"
-          >NEOSWAG</span
-        >
-      </h1>
-      <p class="tagline">
-        <span>MONEY IS TEMPORARY.</span>
-        <span>SWAG IS ETERNAL.</span>
-      </p>
+          <span class="tile__eyebrow">contact</span>
+          <span class="tile__big">hi@neoswag.net</span>
+          <span class="tile__meta">press / bookings ✉</span>
+        </a>
+
+        <!-- ROW 3 -->
+        <div class="tile tile--mag">
+          <span class="tile__eyebrow">archive</span>
+          <span class="tile__big">∞</span>
+          <span class="tile__meta">locked</span>
+        </div>
+
+        <div class="tile tile--wide tile--white">
+          <span class="tile__eyebrow">NEOSWAG</span>
+          <span class="tile__big big--tight">world wide swag network</span>
+          <span class="tile__meta">est. 2026</span>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <div class="foot__bars" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="foot__line">© 2026 neoswag · all swag reserved</div>
+      </footer>
     </main>
-
-    <footer class="sys">
-      <div class="sys__bars" aria-hidden="true">
-        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-      </div>
-      <div class="sys__line">
-        <span class="sys__label">SIGNAL</span>
-        <span class="bar" aria-hidden="true"><i style="--p: 41%"></i></span>
-        <span class="sys__pct">41%</span>
-      </div>
-      <div class="sys__line sys__date">
-        2026.<span class="rx">XX</span>.<span class="rx">XX</span>
-        <span class="sys__sep">//</span>
-        TRANSMISSION&nbsp;PENDING
-      </div>
-      <a
-        class="sys__handle"
-        href="https://instagram.com/n3oswag"
-        target="_blank"
-        rel="noopener"
-        ><span class="sys__at">@</span>n3oswag</a
-      >
-    </footer>
 
     <script src="main.js" defer></script>
   </body>
