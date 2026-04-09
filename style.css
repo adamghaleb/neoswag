@@ -357,7 +357,6 @@ body {
   animation:
     split-b 4.3s infinite steps(30),
     hue-b 12s linear infinite;
-  opacity: 0.75;
 }
 @keyframes hue-r {
   0%,
@@ -395,18 +394,19 @@ body {
   88%,
   100% {
     transform: translate(0, 0);
-    opacity: 0.55;
+    opacity: 0;
   }
   90% {
     transform: translate(-4px, 1px);
-    opacity: 0.9;
+    opacity: 0.8;
   }
   92% {
     transform: translate(6px, -2px);
-    opacity: 1;
+    opacity: 0.9;
   }
   94% {
     transform: translate(-2px, 0);
+    opacity: 0;
   }
 }
 @keyframes split-g {
@@ -414,18 +414,19 @@ body {
   86%,
   100% {
     transform: translate(0, 0);
-    opacity: 0.55;
+    opacity: 0;
   }
   88% {
     transform: translate(5px, -1px);
-    opacity: 1;
+    opacity: 0.9;
   }
   91% {
     transform: translate(-6px, 2px);
-    opacity: 0.9;
+    opacity: 0.8;
   }
   93% {
     transform: translate(2px, 0);
+    opacity: 0;
   }
 }
 @keyframes split-b {
@@ -433,12 +434,18 @@ body {
   92%,
   100% {
     transform: translate(0, 0);
+    opacity: 0;
   }
   94% {
     transform: translate(0, 3px);
+    opacity: 0.8;
   }
   96% {
     transform: translate(0, -2px);
+    opacity: 0.6;
+  }
+  98% {
+    opacity: 0;
   }
 }
 
