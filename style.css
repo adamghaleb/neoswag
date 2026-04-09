@@ -289,63 +289,47 @@ body {
 .title .char {
   display: inline-block;
   color: var(--fg);
-  animation: charCycle 9s linear infinite;
+  --glow: var(--pink);
+  animation: charFlash 9s linear infinite;
 }
 .title .char:nth-child(1) {
+  --glow: var(--pink);
   animation-delay: 0s;
 }
 .title .char:nth-child(2) {
-  animation-delay: 0.08s;
+  --glow: var(--orange);
+  animation-delay: -1.286s;
 }
 .title .char:nth-child(3) {
-  animation-delay: 0.16s;
+  --glow: var(--yel);
+  animation-delay: -2.571s;
 }
 .title .char:nth-child(4) {
-  animation-delay: 0.24s;
+  --glow: var(--green);
+  animation-delay: -3.857s;
 }
 .title .char:nth-child(5) {
-  animation-delay: 0.32s;
+  --glow: var(--cyan);
+  animation-delay: -5.143s;
 }
 .title .char:nth-child(6) {
-  animation-delay: 0.4s;
+  --glow: var(--purple);
+  animation-delay: -6.429s;
 }
 .title .char:nth-child(7) {
-  animation-delay: 0.48s;
+  --glow: var(--mag);
+  animation-delay: -7.714s;
 }
-@keyframes charCycle {
+@keyframes charFlash {
   0%,
-  55%,
+  86%,
   100% {
     color: var(--fg);
-    text-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.18);
   }
-  60% {
-    color: var(--pink);
-    text-shadow: 0 0 22px var(--pink);
-  }
-  65% {
-    color: var(--orange);
-    text-shadow: 0 0 22px var(--orange);
-  }
-  70% {
-    color: var(--yel);
-    text-shadow: 0 0 22px var(--yel);
-  }
-  75% {
-    color: var(--green);
-    text-shadow: 0 0 22px var(--green);
-  }
-  80% {
-    color: var(--cyan);
-    text-shadow: 0 0 22px var(--cyan);
-  }
-  85% {
-    color: var(--purple);
-    text-shadow: 0 0 22px var(--purple);
-  }
-  90% {
-    color: var(--mag);
-    text-shadow: 0 0 22px var(--mag);
+  93% {
+    color: var(--glow);
+    text-shadow: 0 0 10px var(--glow);
   }
 }
 .title__layer--r,
